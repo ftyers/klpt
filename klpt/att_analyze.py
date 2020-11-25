@@ -180,3 +180,6 @@ class Analysis:
     def analyze(self, word):
         return list(self.t.apply(word, dir='down'))
 
+    def generate(self, word):
+        return list(self.t.apply(word, dir='up'))
+
